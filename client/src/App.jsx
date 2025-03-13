@@ -1,11 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import About from "./pages/About"
-import Signup from "./pages/signup"
+import Signup from "./pages/Signup"
 import Home from "./pages/Home"
 import Dashboard from "./pages/Dashboard"
 import Projects from "./pages/Projects"
 import Signin from "./pages/Signin"
 import Header from "./components/Header"
+import FooterCom from "./components/Footer"
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/sign-in" element={<Signin/>}/>
         <Route path="/sign-up" element={<Signup/>}/>
       </Routes>
+      <FooterCom/>
     </BrowserRouter>
   )
 }
